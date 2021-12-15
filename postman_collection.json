@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "b8fc043a-7fa5-497b-a328-fe6938415373",
+		"name": "hapi-uploadfile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Try to send post form-data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data",
+							"type": "file",
+							"src": ""
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/uploads",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"uploads"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
