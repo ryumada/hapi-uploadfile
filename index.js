@@ -7,6 +7,17 @@ const init = async () => {
   });
 
   server.route({
+    method: 'POST',
+    path: '/uploads',
+    handler: (request) => {
+      return { message: 'Anda berhasil melakukan request' };
+    },
+    options: {
+      payload: {
+        allow: 'multipart/form-data',
+        multipart: true,
+      },
+    },
   });
 
   await server.start();
